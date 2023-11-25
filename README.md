@@ -67,3 +67,22 @@ pnpm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://vitejs.dev/config/).
+
+
+### Push to git hub pages
+
+on main
+git add .
+git commit -m "message"
+git push origin main
+
+ready to build and deploy?
+
+npm run build
+git add dist -f 
+git commit -m "deploy to gh-pages"
+git subtree push --prefix dist origin gh-pages
+
+make sure ot just push the dist
+
+

@@ -9,7 +9,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/1hockeytape.github.io/',
+  base: '/hockeytape.github.io/',
   plugins: [
     vue({
       template: { transformAssetUrls },

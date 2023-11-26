@@ -1,7 +1,8 @@
 <template>
-  <v-container class="fill-height app-container">
+  <v-container class="fill-height app-container fadeIn">
     <v-responsive class="align-center text-center fill-height">
-      <v-img height="300" src="@/assets/art1.png" />
+
+      <v-img class="imageHeight" :max-height="getImageHeight()" src="@/assets/art1.png" />
 
       <div class="py-2" />
       <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div>
@@ -12,8 +13,7 @@
       <h1 class="text-h3 font-weight-bold custom-font makeSmaller">HOCKEYTAPE</h1>
 
       <div class="py-3" />
-      <div class="py-3" />
-      <div class="py-3" />
+
 
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
@@ -42,8 +42,11 @@
 
             Soundcloud
           </v-btn>
-          <div class="py-8" />
+      
+          <div class="py-8 help" /> 
+          <div class="py-8 help" /> 
         </v-col>
+     
 
 
       </v-row>
@@ -52,7 +55,12 @@
 </template>
 
 <script lang="ts" setup>
-  
+import { onMounted } from 'vue';
+  import { ref } from 'vue';
+
+const getImageHeight = () => {
+  return window.innerWidth > 900 ? 450 : 300;
+};
 </script>
 
 
@@ -60,9 +68,12 @@
 
 @import '../fonts/custom-font.css';
 
+
+
 .custom-font {
   letter-spacing: 0.1em !important;
 font-family: 'CustomFont' !important;
+
 
 
 /* Add other styling as needed */
@@ -76,6 +87,22 @@ font-family: 'CustomFont' !important;
   justify-content: center;
   align-items: center;
   color: white; 
+
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .coolColor {
@@ -92,5 +119,8 @@ font-family: 'CustomFont' !important;
   }
 }
 
+.imageHeight {
+  height: 400 !important;
+}
 
 </style>

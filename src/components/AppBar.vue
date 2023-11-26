@@ -1,5 +1,5 @@
 <template >
-    <v-app-bar color=#020201 flat>
+    <v-app-bar class="fadeIn" color=#020201 flat>
     
       <v-app-bar-title class="custom-font ">
   
@@ -38,6 +38,22 @@
     align-items: center;
     gap: 0.5em;
   }
+
+  .fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
   
   
   

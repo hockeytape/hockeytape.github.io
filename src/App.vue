@@ -13,3 +13,9 @@
   import AppBar from '@/components/AppBar.vue'
   import Footer from '@/components/Footer.vue'
 </script>
+
+<style>
+body {
+  background-color: #020101;
+}
+</style>

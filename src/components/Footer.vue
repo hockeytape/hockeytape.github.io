@@ -3,19 +3,19 @@
       <!-- Your page content goes here -->
   
       <!-- Footer -->
-      <v-footer class="footer textGrey" color="#020201" flat>
-        <div class="flexRow">
+      <v-footer class="footer textGrey gap zindex fadeIn" color="#020201" flat>
+        <div class="flexRow ">
             <p class="custom-font">HT</p>
-                <p>&copy; 2023 HOCKEYTAPE. All rights reserved.</p>
+                <p>&copy; 2023 HOCKEYTAPE. All rights reserved.  Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
                 
         </div>
         <div class="flexRow">
 
-            Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.
+           
      
-    </div>
+        </div>
 
-        <div class="flexRow">
+        <div class="flexRow zindex">
             <v-btn
             href="https://soundcloud.com/hockeytape"
             min-width="164"
@@ -73,9 +73,29 @@
     justify-content: space-between;
   }
 
+  .zindex {
+    z-index: 5000;
+  }
+
   @media only screen and (min-width: 800px) {
   .footer {
     flex-direction: row;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 2s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
   
@@ -84,6 +104,10 @@
     font-size: 1.2em;
     letter-spacing: 0.2em;
     /* Add other styling as needed */
+  }
+
+  .gap {
+    gap: 5px;
   }
   
   .wrapper {
@@ -120,6 +144,7 @@
     font-size: 0.8em;
   }
 
+ 
 
   </style>
   

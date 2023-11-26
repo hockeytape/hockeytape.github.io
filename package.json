@@ -1,4 +1,6 @@
 {
+  "name": "hockeytape.github.io",
+  "homepage": "https://hockeytape.github.io",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -29,6 +31,7 @@
     "typescript": "^5.0.0",
     "unplugin-fonts": "^1.0.3",
     "vite": "^4.2.0",
+    "vite-plugin-rewrite-all": "^1.0.2",
     "vite-plugin-vuetify": "^1.0.0",
     "vue-tsc": "^1.2.0"
   }

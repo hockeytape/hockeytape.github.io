@@ -56,15 +56,13 @@
 
 <style scoped>
 
-@import '../fonts/custom-font.css';
+/* @import '../fonts/custom-font.css'; */
 
-.custom-font {
+/* .custom-font {
   letter-spacing: 0.1em !important;
 font-family: 'CustomFont' !important;
 
-
-/* Add other styling as needed */
-}
+} */
 .app-container {
   background-image: url('@/assets/art5.png'); 
   background-size: cover; 

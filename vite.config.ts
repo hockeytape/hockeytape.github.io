@@ -7,18 +7,19 @@ import ViteFonts from 'unplugin-fonts/vite'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+// import pluginRewriteAll from 'vite-plugin-rewrite-all';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    
     vue({
       template: { transformAssetUrls },
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     vuetify({
       autoImport: true,
-      styles: {
-        configFile: 'src/styles/settings.scss',
-      },
+  
     }),
     ViteFonts({
       google: {
@@ -38,6 +39,7 @@ export default defineConfig({
     },
     extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
+
   server: {
     port: 3000,
   },

@@ -1,4 +1,4 @@
 
 module.exports = {
-    publicPath: '/hockeytape.github.io'
+    publicPath: '/hockeytape.github.io/'
 }

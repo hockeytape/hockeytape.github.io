@@ -56,7 +56,7 @@
     </div>
   </template>
   
-  <script setup>
+  <script lang="ts" setup>
   // Your setup script goes here
   </script>
   

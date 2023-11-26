@@ -1,75 +1,96 @@
 <template>
-  <v-container class="fill-height">
+  <v-container class="fill-height app-container">
     <v-responsive class="align-center text-center fill-height">
-      <v-img height="300" src="@/assets/logo.svg" />
+      <v-img height="300" src="@/assets/art1.png" />
 
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+      <div class="py-2" />
+      <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div>
+    
+      <div class="text-body-2 font-weight-light mb-n1 font-italic coolColor">Coming soon...</div>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+      <div class="py-4" />
+      <h1 class="text-h3 font-weight-bold custom-font makeSmaller">HOCKEYTAPE</h1>
 
-      <div class="py-14" />
+      <div class="py-3" />
+      <div class="py-3" />
+      <div class="py-3" />
 
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
+          <p>Enter the mysterious realm where icy wobbles cut through the silence. Join the movement and explore the depths of sound.</p>
+    
+
+        </v-col>
+      </v-row>
+      <v-row class="d-flex align-center justify-center">
+
+
+        <v-col cols="auto">
           <v-btn
-            href="https://vuetifyjs.com/components/all/"
+            href="https://soundcloud.com/hockeytape"
             min-width="164"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
+            class="prettyColor"
           >
             <v-icon
-              icon="mdi-view-dashboard"
+              icon="mdi-soundcloud"
               size="large"
               start
             />
 
-            Components
+            Soundcloud
           </v-btn>
+          <div class="py-8" />
         </v-col>
 
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            href="https://vuetifyjs.com/introduction/why-vuetify/#feature-guides"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
 
-            Get Started
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            href="https://community.vuetifyjs.com/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
-
-            Community
-          </v-btn>
-        </v-col>
       </v-row>
     </v-responsive>
   </v-container>
 </template>
 
-<script setup>
-  //
+<script lang="ts" setup>
+  
 </script>
+
+
+<style scoped>
+
+@import '../fonts/custom-font.css';
+
+.custom-font {
+  letter-spacing: 0.1em !important;
+font-family: 'CustomFont' !important;
+
+
+/* Add other styling as needed */
+}
+.app-container {
+  background-image: url('@/assets/art5.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+
+.coolColor {
+  color: #77FEF6;
+}
+
+.prettyColor {
+  color: #F98057;
+}
+
+@media screen and (max-width: 600px) {
+  .makeSmaller {
+    font-size: 2em !important; /* Adjust the font size for small screens */
+  }
+}
+
+
+</style>

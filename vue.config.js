@@ -1,2 +1,4 @@
 
-export const publicPath = '/hockeytape.github.io/';
+module.exports = {
+    publicPath: '/hockeytape.github.io/'
+}

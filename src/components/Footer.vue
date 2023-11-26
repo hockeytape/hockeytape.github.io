@@ -4,7 +4,7 @@
   
       <!-- Footer -->
       <v-footer class="footer textGrey gap zindex fadeIn" color="#020201" flat>
-        <div class="flexRow ">
+        <div class="flexRow2 ">
             <p class="custom-font">HT</p>
                 <p>&copy; 2023 HOCKEYTAPE. All rights reserved.  Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
                 
@@ -62,6 +62,7 @@
   
   <style scoped>
   @import '../fonts/custom-font.css';
+  
   
   .footer {
     background-color: rgba(2, 2, 1, 0) !important; /* Make sure to adjust the RGB values */
@@ -138,6 +139,20 @@
     /* justify-content: center; */
     text-align: center;
   }
+
+  .flexRow2 {
+    display: flex;
+    gap: 1em;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 800px) {
+  .flexRow2 {
+    flex-direction: column;
+  }
+}
 
   .textGrey {
     color: grey !important;

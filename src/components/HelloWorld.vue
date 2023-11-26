@@ -5,12 +5,15 @@
       <v-img class="imageHeight" :max-height="getImageHeight()" src="@/assets/art1.png" />
 
       <div class="py-2" />
-      <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div>
-    
+      <!-- <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div> -->
+      <AnimatedHeader />
       <div class="text-body-2 font-weight-light mb-n1 font-italic coolColor">Coming soon...</div>
 
       <div class="py-4" />
-      <h1 class="text-h3 font-weight-bold custom-font makeSmaller">HOCKEYTAPE</h1>
+
+      <h1 class="text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
+    
+      
 
       <div class="py-3" />
 
@@ -43,8 +46,8 @@
             Soundcloud
           </v-btn>
       
-          <div class="py-8 help" /> 
-          <div class="py-8 help" /> 
+          <div class="py-8" /> 
+          <div class="py-11 help" /> 
         </v-col>
      
 
@@ -55,6 +58,7 @@
 </template>
 
 <script lang="ts" setup>
+  import AnimatedHeader from '../components/AnimatedHeader.vue';
 import { onMounted } from 'vue';
   import { ref } from 'vue';
 
@@ -121,6 +125,12 @@ font-family: 'CustomFont' !important;
 
 .imageHeight {
   height: 400 !important;
+}
+
+@media screen and (min-width: 800px) {
+  .help {
+    display: none;
+  }
 }
 
 </style>

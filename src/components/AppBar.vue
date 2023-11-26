@@ -26,7 +26,7 @@
     .custom-font {
     font-family: 'CustomFont', sans-serif;
     font-size: 1.2em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
   
     /* Add other styling as needed */
   }

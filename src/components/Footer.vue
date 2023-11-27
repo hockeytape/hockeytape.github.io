@@ -15,7 +15,7 @@
      
         </div>
 
-        <div class="flexRow zindex">
+        <div class="flexRow zindex groupLeft">
             <v-btn
             href="https://soundcloud.com/hockeytape"
             min-width="164"
@@ -34,6 +34,23 @@
           </v-btn>
 
           <v-btn
+            href="https://twitter.com/hockeytapemusic"
+            min-width="164"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor"
+          >
+            <v-icon
+              icon="mdi-twitter"
+              size="large"
+              start
+            />
+
+            Twitter
+          </v-btn>
+
+          <v-btn
             href="https://www.instagram.com/hockeytapemusic/"
             min-width="164"
             rel="noopener noreferrer"
@@ -48,6 +65,23 @@
             />
 
             Instagram
+          </v-btn>
+
+          <v-btn
+            href="https://www.duckduckgo.com"
+            min-width="164"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor"
+          >
+            <v-icon
+              icon="mdi-spotify"
+              size="large"
+              start
+            />
+
+            Spotify
           </v-btn>
         </div>
 
@@ -78,11 +112,23 @@
     z-index: 5000;
   }
 
-  @media only screen and (min-width: 800px) {
+
+  @media only screen and (min-width: 1200px) {
   .footer {
     flex-direction: row;
   }
+  
 }
+
+@media only screen and (max-width: 1250px) {
+    .groupLeft {
+    flex-direction: column  !important;
+  }
+  
+}
+
+
+
 
 .fadeIn {
   opacity: 0;

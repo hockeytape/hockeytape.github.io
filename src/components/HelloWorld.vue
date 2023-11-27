@@ -48,6 +48,8 @@
       
           <div class="py-8" /> 
           <div class="py-11 help" /> 
+          <div class="py-11 help" /> 
+          <div class="py-10 help" /> 
         </v-col>
      
 
@@ -127,7 +129,7 @@ font-family: 'CustomFont' !important;
   height: 400 !important;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1260px) {
   .help {
     display: none;
   }

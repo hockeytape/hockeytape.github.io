@@ -51,3 +51,9 @@ bun run build
 ### Customize configuration
 
 See [Configuration Reference](https://vitejs.dev/config/).
+
+
+This is the working version 
+
+jsut npm run deploy to push to hockeytape.github.io
+make sure logged into right github account

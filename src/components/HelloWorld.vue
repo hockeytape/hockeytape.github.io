@@ -45,6 +45,25 @@
 
             Soundcloud
           </v-btn>
+
+          <v-btn
+            href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
+            min-width="164"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor2"
+          >
+            <v-icon
+              icon="mdi-spotify"
+              size="large"
+              start
+            />
+
+            Spotify
+          </v-btn>
+
+          
       
           <div class="py-8" /> 
           <div class="py-11 help" /> 
@@ -117,6 +136,10 @@ font-family: 'CustomFont' !important;
 
 .prettyColor {
   color: #F98057;
+}
+
+.prettyColor2 {
+  color: #5cf957;
 }
 
 @media screen and (max-width: 600px) {

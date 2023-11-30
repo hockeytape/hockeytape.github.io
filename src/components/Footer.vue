@@ -68,7 +68,7 @@
           </v-btn>
 
           <v-btn
-            href="https://www.duckduckgo.com"
+            href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
             min-width="164"
             rel="noopener noreferrer"
             target="_blank"

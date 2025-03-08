@@ -267,12 +267,12 @@ font-family: 'CustomFont' !important;
 
 }
 
-@media screen and (min-width: 824px) {
+/* @media screen and (min-width: 824px) {
   .py-8 {
     display: none;
   }
 
-}
+} */
 
 .soundCloudPlayer {
   display: flex;

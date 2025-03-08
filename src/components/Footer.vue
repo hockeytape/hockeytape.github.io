@@ -139,7 +139,7 @@
   }
 
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1250px) {
     .footer {
       flex-direction: row;
     }
@@ -151,6 +151,12 @@
     flex-direction: row  !important;
   }
   
+}
+
+@media only screen and (max-width: 1250px) {
+  .flexRow2 {
+    flex-direction: column;
+  }
 }
 
 .smallImage {
@@ -236,11 +242,7 @@
 
 
 
-  @media only screen and (max-width: 800px) {
-  .flexRow2 {
-    flex-direction: column;
-  }
-}
+
 
   .textGrey {
     color: grey !important;

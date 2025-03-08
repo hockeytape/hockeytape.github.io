@@ -9,16 +9,16 @@
                 <p>&copy; 2023 HOCKEYTAPE. All rights reserved.  Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
                 
         </div>
-        <div class="flexRow">
+        <!-- <div class="flexRow">
 
            
      
-        </div>
+        </div> -->
 
-        <div class="flexRow zindex groupLeft">
+        <div class="tinyIcons zindex">
             <v-btn
             href="https://soundcloud.com/hockeytape"
-            min-width="164"
+            min-width="5"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
@@ -27,15 +27,15 @@
             <v-icon
               icon="mdi-soundcloud"
               size="large"
-              start
+       
             />
 
-            Soundcloud
+            <!-- Soundcloud -->
           </v-btn>
 
           <v-btn
             href="https://twitter.com/hockeytapemusic"
-            min-width="164"
+            min-width="5"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
@@ -44,15 +44,15 @@
             <v-icon
               icon="mdi-twitter"
               size="large"
-              start
+     
             />
 
-            Twitter
+            <!-- Twitter -->
           </v-btn>
 
           <v-btn
             href="https://www.instagram.com/hockeytapemusic/"
-            min-width="164"
+            min-width="5"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
@@ -61,15 +61,15 @@
             <v-icon
               icon="mdi-instagram"
               size="large"
-              start
+          
             />
 
-            Instagram
+            <!-- Instagram -->
           </v-btn>
 
           <v-btn
             href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
-            min-width="164"
+            min-width="5"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
@@ -78,10 +78,27 @@
             <v-icon
               icon="mdi-spotify"
               size="large"
-              start
+              
             />
 
-            Spotify
+            <!-- Spotify -->
+          </v-btn>
+
+          <v-btn
+            href="https://music.apple.com/us/artist/hockeytape/1718487731"
+            min-width="5"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor"
+          >
+            <v-icon
+              icon="mdi-apple"
+              size="large"
+              
+            />
+
+            <!-- Apple Music -->
           </v-btn>
         </div>
 
@@ -114,15 +131,15 @@
 
 
   @media only screen and (min-width: 1200px) {
-  .footer {
-    flex-direction: row;
-  }
+    .footer {
+      flex-direction: row;
+    }
   
-}
+  }
 
 @media only screen and (max-width: 1250px) {
     .groupLeft {
-    flex-direction: column  !important;
+    flex-direction: row  !important;
   }
   
 }
@@ -183,6 +200,14 @@
     display: flex;
     gap: 1em;
     /* justify-content: center; */
+    text-align: center;
+  }
+
+  .tinyIcons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    justify-content: center;
     text-align: center;
   }
 

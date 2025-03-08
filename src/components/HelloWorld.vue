@@ -40,13 +40,32 @@
 
 
         <v-col cols="auto">
+
+          <div class="buttonWrapperVertical">
+          <v-btn
+            href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
+            min-width="164"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor2 addGap"
+          >
+            <v-icon
+              icon="mdi-spotify"
+              size="large"
+              start
+            />
+
+            Spotify
+          </v-btn>
+
           <v-btn
             href="https://soundcloud.com/hockeytape"
             min-width="164"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
-            class="prettyColor"
+            class="prettyColor addGap"
           >
             <v-icon
               icon="mdi-soundcloud"
@@ -57,22 +76,27 @@
             Soundcloud
           </v-btn>
 
+
           <v-btn
-            href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
+            href="https://music.apple.com/us/artist/hockeytape/1718487731"
             min-width="164"
             rel="noopener noreferrer"
             target="_blank"
             variant="text"
-            class="prettyColor2"
+            class="appleMusic addGap"
           >
             <v-icon
-              icon="mdi-spotify"
+              icon="mdi-apple"
               size="large"
               start
             />
 
-            Spotify
+            Apple Music
           </v-btn>
+
+        </div>
+
+   
 
           
       
@@ -116,6 +140,13 @@ font-family: 'CustomFont' !important;
 
 /* Add other styling as needed */
 }
+
+
+.buttonWrapperVertical {
+  display: flex;
+  flex-direction: row;
+}
+
 .app-container {
   background-image: url('@/assets/art6.png'); 
   background-size: cover; 
@@ -153,6 +184,11 @@ font-family: 'CustomFont' !important;
   transition: color 0.3s ease;
 }
 
+.appleMusic {
+  color: #FF4E6B;
+  transition: color 0.3s ease;
+}
+
 .extraRoomBottom {
   margin-bottom: 0em;
 }
@@ -177,6 +213,11 @@ font-family: 'CustomFont' !important;
   background-color: #1e5e1c51;
 }
 
+.appleMusic:hover {
+  color: #c73d54; /* Slightly darker shade of #5cf957 */
+  background-color: #7a223167;
+}
+
 /* Active (click) effect */
 .prettyColor:active {
   color: #d96443; /* Slightly different shade when clicked */
@@ -195,16 +236,41 @@ font-family: 'CustomFont' !important;
   .makeSmaller {
     font-size: 2em !important; /* Adjust the font size for small screens */
   }
+
+  .buttonWrapperVertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+  }
+
+  .addGap {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .py-11 {
+    display: none;
+  }
+
+ 
 }
 
 .imageHeight {
   height: 400 !important;
 }
 
-@media screen and (min-width: 1260px) {
-  .help {
+@media screen and (min-width: 600px) {
+  .py-11 {
     display: none;
   }
+
+}
+
+@media screen and (min-width: 601px) {
+  .py-8 {
+    display: none;
+  }
+
 }
 
 .soundCloudPlayer {

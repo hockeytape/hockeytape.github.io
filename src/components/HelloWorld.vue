@@ -266,7 +266,7 @@ font-family: 'CustomFont' !important;
 
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 824px) {
   .py-8 {
     display: none;
   }

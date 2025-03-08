@@ -10,7 +10,7 @@
           :max-height="getImageHeight()"
           src="@/assets/logoWatermark 3.png"
         />
-          HOCKEYTAPE ‎  
+          HKTP ‎  
         </div>
   
       </v-app-bar-title>

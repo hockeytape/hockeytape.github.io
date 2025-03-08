@@ -11,21 +11,32 @@
 
       <div class="py-4" />
 
-      <h1 class="text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
+      <h1 class="hockeytapeHeader text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
     
       
 
       <div class="py-3" />
 
 
-      <v-row class="d-flex align-center justify-center">
+      <v-row class="d-flex align-center justify-center extraRoomBottom">
         <v-col cols="auto">
-          <p>Enter the mysterious realm where icy wobbles cut through the silence. Join the movement and explore the depths of sound.</p>
+          <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Heavy dream bass for the bees and the trees...</p>
     
 
         </v-col>
       </v-row>
+      
       <v-row class="d-flex align-center justify-center">
+          <v-col class="soundCloudPlayer">
+            <iframe class="soundCloudFrame"  width="50%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1807306176&color=%2319070f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </v-col>
+        </v-row>
+    
+      <v-row class="d-flex align-center justify-center">
+
+    
+    
+        
 
 
         <v-col cols="auto">
@@ -74,6 +85,8 @@
 
 
       </v-row>
+
+     
     </v-responsive>
   </v-container>
 </template>
@@ -104,7 +117,7 @@ font-family: 'CustomFont' !important;
 /* Add other styling as needed */
 }
 .app-container {
-  background-image: url('@/assets/art5.png'); 
+  background-image: url('@/assets/art6.png'); 
   background-size: cover; 
   background-position: center; 
   height: 100vh; 
@@ -134,13 +147,49 @@ font-family: 'CustomFont' !important;
   color: #77FEF6;
 }
 
+/* Base colors */
 .prettyColor {
   color: #F98057;
+  transition: color 0.3s ease;
+}
+
+.extraRoomBottom {
+  margin-bottom: 0em;
+}
+
+.subText {
+  color: #ffffff45;
 }
 
 .prettyColor2 {
   color: #5cf957;
+  transition: color 0.3s ease;
 }
+
+/* Hover effect */
+.prettyColor:hover {
+  color: #e76f48; /* Slightly darker shade of #F98057 */
+  background-color: #8739234d;
+}
+
+.prettyColor2:hover {
+  color: #4dbd4a; /* Slightly darker shade of #5cf957 */
+  background-color: #1e5e1c51;
+}
+
+/* Active (click) effect */
+.prettyColor:active {
+  color: #d96443; /* Slightly different shade when clicked */
+}
+
+.prettyColor2:active {
+  color: #44a03f; /* Slightly different shade when clicked */
+}
+
+.hockeytapeHeader {
+
+}
+
 
 @media screen and (max-width: 600px) {
   .makeSmaller {
@@ -156,6 +205,18 @@ font-family: 'CustomFont' !important;
   .help {
     display: none;
   }
+}
+
+.soundCloudPlayer {
+  display: flex;
+  justify-content: center;
+  /* border-radius: 10000px;
+  background-color: red; */
+}
+
+.soundCloudFrame {
+  border-radius: 1px;
+  max-width: 600px;
 }
 
 </style>

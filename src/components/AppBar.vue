@@ -4,7 +4,12 @@
       <v-app-bar-title class="custom-font ">
   
         <div class="wrapper">
-          <v-icon icon="mdi-hockey-sticks" />
+          <!-- <v-icon icon="mdi-hockey-sticks" /> -->
+          <v-img
+          class="smallImage"
+          :max-height="getImageHeight()"
+          src="@/assets/logoWatermark 3.png"
+        />
           HOCKEYTAPE ‎  
         </div>
   
@@ -16,13 +21,16 @@
   <script lang="ts" setup>
     //
   
-  
+    const getImageHeight = () => {
+      return window.innerWidth > 900 ? 150 : 100;
+};
   </script>
   
   
   <style scoped>
     @import '../fonts/custom-font.css';
   
+
     .custom-font {
     font-family: 'CustomFont', sans-serif;
     font-size: 1.2em;
@@ -37,6 +45,7 @@
     justify-content: left;
     align-items: center;
     gap: 0.5em;
+    color: #ffffff45;
   }
 
   .fadeIn {
@@ -44,6 +53,13 @@
   animation: fadeIn 3s forwards;
   animation-delay: 1s;
 }
+
+
+.smallImage {
+    max-height: 150px; /* Adjust this value as needed */
+    max-width: 3em;
+    width: 10%;
+  }
 
 
 @keyframes fadeIn {

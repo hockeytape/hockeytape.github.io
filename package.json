@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && type nul > dist/CNAME && echo hockeytapemusic.com > dist/CNAME",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },

@@ -1,144 +1,147 @@
 <template>
   <v-container class="fill-height app-container fadeIn">
     <v-responsive class="align-center text-center fill-height">
-
-  
       <div class="dropContainer">
-        <v-img
-        class="imageHeight makeSmaller addPadding dropShadow"
-        :max-width="getImageHeight()"
-        src="@/assets/art2.png"
-      />
+        <div 
+        
+        class="helpme">
+          <v-img
+          
+            class="imageHeight makeSmaller addPadding"
+            :max-width="getImageHeight()"
+            src="@/assets/backdropLogoDropShadow.png"
+            position="absolute"
+            cover
+          />
+        </div>
+        
+          <v-img
+            
+            class="fade imageHeight makeSmaller addPadding dropShadow"
+            :max-width="getImageHeight()"
+            src="@/assets/art2.png"
+          />
       </div>
-      
+
       <div class="py-2" />
       <!-- <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div> -->
       <AnimatedHeader />
-      <div class="text-body-2 font-weight-light mb-n1 font-italic coolColor">Coming soon...</div>
+      <div class="text-body-2 font-weight-light mb-n1 font-italic coolColor">
+        Coming soon...
+      </div>
 
       <div class="py-4" />
 
-      <h1 class="hockeytapeHeader  text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
+      <h1 class="hockeytapeHeader text-h3 custom-font makeSmaller">
+        HOCKEYTAPE
+      </h1>
       <!-- secret comment to test deploy script -->
-    
-      
 
       <div class="py-3" />
-
 
       <v-row class="d-flex align-center justify-center extraRoomBottom">
         <v-col cols="auto">
           <!-- <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Heavy dream bass for the bees and the trees...</p> -->
-          <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Don't you know about Hockeytape?</p>
-    
-
+          <p
+            class="text-body-2 font-weight-light mb-n1 font-italic prettyColor"
+          >
+            Don't you know about Hockeytape?
+          </p>
         </v-col>
       </v-row>
-      
+
       <v-row class="d-flex align-center justify-center">
-          <v-col class="soundCloudPlayer">
-            <iframe class="soundCloudFrame"  width="90%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1807306176&color=%2319070f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </v-col>
-        </v-row>
-    
+        <v-col class="soundCloudPlayer">
+          <iframe
+            class="soundCloudFrame"
+            width="90%"
+            height="150"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1807306176&color=%2319070f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+        </v-col>
+      </v-row>
+
       <v-row class="d-flex align-center justify-center">
-
-    
-    
-        
-
-
         <v-col cols="auto">
-
           <div class="buttonWrapperVertical">
-          <v-btn
-            href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-            class="prettyColor2 addGap"
-          >
-            <v-icon
-              icon="mdi-spotify"
-              size="large"
-              start
-            />
+            <v-btn
+              href="https://open.spotify.com/artist/4hcMrUBBLCuG6PwWoYfjff"
+              min-width="164"
+              rel="noopener noreferrer"
+              target="_blank"
+              variant="text"
+              class="prettyColor2 addGap"
+            >
+              <v-icon icon="mdi-spotify" size="large" start />
 
-            Spotify
-          </v-btn>
+              Spotify
+            </v-btn>
 
-          <v-btn
-            href="https://soundcloud.com/hockeytape"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-            class="prettyColor addGap"
-          >
-            <v-icon
-              icon="mdi-soundcloud"
-              size="large"
-              start
-            />
+            <v-btn
+              href="https://soundcloud.com/hockeytape"
+              min-width="164"
+              rel="noopener noreferrer"
+              target="_blank"
+              variant="text"
+              class="prettyColor addGap"
+            >
+              <v-icon icon="mdi-soundcloud" size="large" start />
 
-            Soundcloud
-          </v-btn>
+              Soundcloud
+            </v-btn>
 
+            <v-btn
+              href="https://music.apple.com/us/artist/hockeytape/1718487731"
+              min-width="164"
+              rel="noopener noreferrer"
+              target="_blank"
+              variant="text"
+              class="appleMusic addGap"
+            >
+              <v-icon icon="mdi-apple" size="large" start />
 
-          <v-btn
-            href="https://music.apple.com/us/artist/hockeytape/1718487731"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-            class="appleMusic addGap"
-          >
-            <v-icon
-              icon="mdi-apple"
-              size="large"
-              start
-            />
+              Apple Music
+            </v-btn>
+          </div>
 
-            Apple Music
-          </v-btn>
-
-        </div>
-
-   
-
-          
-      
-          <div class="py-8" /> 
-          <div class="py-11 help" /> 
-          <div class="py-11 help" /> 
-          <div class="py-10 help" /> 
+          <div class="py-8" />
+          <div class="py-11 help" />
+          <div class="py-11 help" />
+          <div class="py-10 help" />
         </v-col>
-     
-
-
       </v-row>
-
-     
     </v-responsive>
   </v-container>
 </template>
 
 <script lang="ts" setup>
-  import AnimatedHeader from '../components/AnimatedHeader.vue';
-import { onMounted } from 'vue';
-  import { ref } from 'vue';
+import AnimatedHeader from "../components/AnimatedHeader.vue";
+import { onMounted, ref } from "vue";
+
 
 const getImageHeight = () => {
   return window.innerWidth > 900 ? 450 : 300;
 };
+
+const showBack = ref(true);
+
+const showArt2 = ref(false);
+
+
+
+onMounted(() => {
+  // Delay showing art2.png by 5 seconds
+  setTimeout(() => {
+    showArt2.value = true;
+  }, 10000); // 5000ms = 5 seconds
+});
 </script>
 
-
 <style scoped>
-
-@import '../fonts/custom-font.css';
-
+@import "../fonts/custom-font.css";
 
 /* REMOVE BELOW IF YOU DON"T WANT BG TO COVER WHOLE SCREEN */
 .v-container {
@@ -147,7 +150,6 @@ const getImageHeight = () => {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 
 .makeSmaller {
   margin: 20px;
@@ -166,17 +168,25 @@ const getImageHeight = () => {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+}
+
+.helpme {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .custom-font {
   letter-spacing: 0.1em !important;
-font-family: 'CustomFont' !important;
+  font-family: "CustomFont" !important;
 
-
-
-/* Add other styling as needed */
+  /* Add other styling as needed */
 }
-
 
 .buttonWrapperVertical {
   display: flex;
@@ -184,15 +194,14 @@ font-family: 'CustomFont' !important;
 }
 
 .app-container {
-  background-image: url('@/assets/treeBackground.png'); 
-  background-size: cover; 
-  background-position: center; 
-  height: 100vh; 
+  background-image: url("@/assets/treeBackground.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; 
-
+  color: white;
 }
 
 .fadeIn {
@@ -200,6 +209,11 @@ font-family: 'CustomFont' !important;
   animation: fadeIn 3s forwards;
 }
 
+.fade {
+  opacity: 0;
+  animation: fadeIn 8s forwards;
+  animation-delay: 5.5s;
+}
 
 @keyframes fadeIn {
   from {
@@ -211,17 +225,17 @@ font-family: 'CustomFont' !important;
 }
 
 .coolColor {
-  color: #77FEF6;
+  color: #77fef6;
 }
 
 /* Base colors */
 .prettyColor {
-  color: #F98057;
+  color: #f98057;
   transition: color 0.3s ease;
 }
 
 .appleMusic {
-  color: #FF4E6B;
+  color: #ff4e6b;
   transition: color 0.3s ease;
 }
 
@@ -264,9 +278,7 @@ font-family: 'CustomFont' !important;
 }
 
 .hockeytapeHeader {
-
 }
-
 
 @media screen and (max-width: 600px) {
   .makeSmaller {
@@ -287,8 +299,6 @@ font-family: 'CustomFont' !important;
   .py-11 {
     display: none;
   }
-
- 
 }
 
 .imageHeight {
@@ -299,14 +309,12 @@ font-family: 'CustomFont' !important;
   .py-11 {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 1250px) {
   .py-8 {
     display: none;
   }
-
 }
 
 .soundCloudPlayer {
@@ -326,4 +334,13 @@ font-family: 'CustomFont' !important;
   /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 5s ease; /* Adjust the duration to make it slower */
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

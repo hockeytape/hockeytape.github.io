@@ -225,7 +225,9 @@ onMounted(() => {
 }
 
 .coolColor {
+  /* color: #77fef6; */
   color: #77fef6;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 2.7);
 }
 
 /* Base colors */

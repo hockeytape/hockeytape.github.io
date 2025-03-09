@@ -206,13 +206,13 @@ onMounted(() => {
 
 .fadeIn {
   opacity: 0;
-  animation: fadeIn 3s forwards;
+  animation: fadeIn 4s forwards;
 }
 
 .fade {
   opacity: 0;
-  animation: fadeIn 8s forwards;
-  animation-delay: 5.5s;
+  animation: fadeIn 7s forwards;
+  animation-delay: 5s;
 }
 
 @keyframes fadeIn {

@@ -21,22 +21,7 @@
         </div> -->
 
         <div class="tinyIcons zindex">
-            <v-btn
-            href="https://soundcloud.com/hockeytape"
-            min-width="5"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-            class="prettyColor"
-          >
-            <v-icon
-              icon="mdi-soundcloud"
-              size="large"
-       
-            />
-
-            <!-- Soundcloud -->
-          </v-btn>
+    
 
           <v-btn
             href="https://twitter.com/hockeytapemusic"
@@ -70,6 +55,23 @@
             />
 
             <!-- Instagram -->
+          </v-btn>
+
+          <v-btn
+            href="https://soundcloud.com/hockeytape"
+            min-width="5"
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="text"
+            class="prettyColor"
+          >
+            <v-icon
+              icon="mdi-soundcloud"
+              size="large"
+       
+            />
+
+            <!-- Soundcloud -->
           </v-btn>
 
           <v-btn

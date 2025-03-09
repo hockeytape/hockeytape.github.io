@@ -2,8 +2,15 @@
   <v-container class="fill-height app-container fadeIn">
     <v-responsive class="align-center text-center fill-height">
 
-      <v-img class="imageHeight" :max-height="getImageHeight()" src="@/assets/art1.png" />
-
+  
+      <div class="dropContainer">
+        <v-img
+        class="imageHeight makeSmaller addPadding dropShadow"
+        :max-width="getImageHeight()"
+        src="@/assets/art2.png"
+      />
+      </div>
+      
       <div class="py-2" />
       <!-- <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div> -->
       <AnimatedHeader />
@@ -11,7 +18,7 @@
 
       <div class="py-4" />
 
-      <h1 class="hockeytapeHeader text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
+      <h1 class="hockeytapeHeader  text-h3  custom-font makeSmaller">HOCKEYTAPE</h1>
       <!-- secret comment to test deploy script -->
     
       
@@ -21,7 +28,8 @@
 
       <v-row class="d-flex align-center justify-center extraRoomBottom">
         <v-col cols="auto">
-          <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Heavy dream bass for the bees and the trees...</p>
+          <!-- <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Heavy dream bass for the bees and the trees...</p> -->
+          <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Don't you know about Hockeytape?</p>
     
 
         </v-col>
@@ -132,6 +140,33 @@ const getImageHeight = () => {
 @import '../fonts/custom-font.css';
 
 
+/* REMOVE BELOW IF YOU DON"T WANT BG TO COVER WHOLE SCREEN */
+.v-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.makeSmaller {
+  margin: 20px;
+}
+
+.addPadding {
+  margin-top: 64px !important;
+}
+
+.dropShadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adds shadow */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+.dropContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .custom-font {
   letter-spacing: 0.1em !important;
@@ -149,7 +184,7 @@ font-family: 'CustomFont' !important;
 }
 
 .app-container {
-  background-image: url('@/assets/art6.png'); 
+  background-image: url('@/assets/treeBackground.png'); 
   background-size: cover; 
   background-position: center; 
   height: 100vh; 
@@ -267,12 +302,12 @@ font-family: 'CustomFont' !important;
 
 }
 
-/* @media screen and (min-width: 824px) {
+@media screen and (min-width: 1250px) {
   .py-8 {
     display: none;
   }
 
-} */
+}
 
 .soundCloudPlayer {
   display: flex;
@@ -284,6 +319,11 @@ font-family: 'CustomFont' !important;
 .soundCloudFrame {
   border-radius: 1px;
   max-width: 600px;
+}
+
+.hockeytapeHeader {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 2.7);
+  /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
 }
 
 </style>

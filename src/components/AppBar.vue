@@ -1,66 +1,51 @@
-<template >
-    <v-app-bar class="fadeIn" color=#020201 flat>
-    
-      <v-app-bar-title class="custom-font ">
-  
-        <div class="wrapper">
-          <!-- <v-icon icon="mdi-hockey-sticks" /> -->
-          <v-img
+<template>
+  <v-app-bar class="fadeIn appBar" flat color="transparent">
+    <v-app-bar-title class="custom-font">
+      <div class="wrapper">
+        <v-img
           class="smallImage"
           :max-height="getImageHeight()"
-          src="@/assets/logoWatermark 3.png"
+          src="@/assets/logoWatermark192A37.png"
         />
-          HKTP ‎  
-        </div>
-  
-      </v-app-bar-title>
-    </v-app-bar>
-  
-  </template>
-  
-  <script lang="ts" setup>
-    //
-  
-    const getImageHeight = () => {
-      return window.innerWidth > 900 ? 150 : 100;
+        HKTP
+      </div>
+    </v-app-bar-title>
+  </v-app-bar>
+</template>
+
+<script lang="ts" setup>
+const getImageHeight = () => {
+  return window.innerWidth > 900 ? 150 : 100;
 };
-  </script>
-  
-  
-  <style scoped>
-    @import '../fonts/custom-font.css';
-  
+</script>
 
-    .custom-font {
-    font-family: 'CustomFont', sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-  
-    /* Add other styling as needed */
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 0.5em;
-    color: #ffffff45;
-  }
+<style scoped>
+.custom-font {
+  font-family: 'CustomFont', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
 
-  .fadeIn {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5em;
+  color: #192A37;
+}
+
+.fadeIn {
   opacity: 0;
   animation: fadeIn 3s forwards;
   animation-delay: 1s;
 }
 
-
 .smallImage {
-    max-height: 150px; /* Adjust this value as needed */
-    max-width: 3em;
-    width: 10%;
-  }
-
+  max-height: 150px;
+  max-width: 2em;
+  width: 10%;
+}
 
 @keyframes fadeIn {
   from {
@@ -70,7 +55,13 @@
     opacity: 1;
   }
 }
-  
-  
-  
-  </style>
+
+.appBar {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+</style>

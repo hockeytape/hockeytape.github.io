@@ -1,11 +1,12 @@
 <template>
   <v-app>
-    <v-main>
+    <!-- removed v-main because of background image overlap -->
+    <!-- <v-main> -->
       <AppBar/>
       <Footer />
       <HelloWorld />
       <!-- <AnimatedHeader /> -->
-    </v-main>
+    <!-- </v-main> -->
   </v-app>
 </template>
 
@@ -20,4 +21,6 @@
 body {
   background-color: #020101;
 }
+
+
 </style>

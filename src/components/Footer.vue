@@ -251,7 +251,9 @@
     font-size: 0.8em;
   }
 
- 
+  .colorLightOrange {
+  color: #ffefe2;
+}
 
   </style>
   

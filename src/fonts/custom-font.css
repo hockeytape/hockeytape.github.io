@@ -1,6 +1,41 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('./hockeytape.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'CustomFont';
+  src: url('./hockeytape.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont2';
+  src: url('./FantaisieArtistique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont3';
+  src: url('./ghasedak-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont4';
+  src: url('./KIRANA.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont5';
+  src: url('./KOMIKAB_.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CustomFont6';
+  src: url('./speedway.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

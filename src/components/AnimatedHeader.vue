@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center">
-        <h2 class="text-body-2  mb-n0 ">VINTAGE DROPOUT EP</h2>
+        <h2 class="text-body-5  mb-n0 fontColor">VINTAGE DROPOUT EP</h2>
     </div>
   </div>
 </div>
@@ -79,6 +79,10 @@ h2 {
   /* font-weight: 300; */
   animation: lights 5s 750ms linear infinite;
   /* font-family: 'CustomFont', sans-serif; */
+
+}
+
+.fontColor{
 
 }
 </style>

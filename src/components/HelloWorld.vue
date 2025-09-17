@@ -2,11 +2,8 @@
   <v-container class="fill-height app-container fadeIn">
     <v-responsive class="align-center text-center fill-height">
       <div class="dropContainer">
-        <div 
-        
-        class="helpme">
+        <div class="helpme">
           <v-img
-          
             class="imageHeight makeSmaller addPadding"
             :max-width="getImageHeight()"
             src="@/assets/backdropLogoDropShadow.png"
@@ -14,25 +11,26 @@
             cover
           />
         </div>
-        
-          <v-img
-            
-            class="fade imageHeight makeSmaller addPadding dropShadow"
-            :max-width="getImageHeight()"
-            src="@/assets/art2.png"
-          />
+
+        <v-img
+          class="fade imageHeight makeSmaller addPadding dropShadow"
+          :max-width="getImageHeight()"
+          src="@/assets/valencia.png"
+        />
       </div>
 
       <div class="py-2" />
       <!-- <div class="text-body-2 font-weight-bold mb-n1 ">Aliens On Ice EP</div> -->
-      <AnimatedHeader />
-      <div class="text-body-2 font-weight-light mb-n1 font-italic coolColor">
+      <!-- <AnimatedHeader /> -->
+      <!-- <div class="bigger font-weight-light mb-n1 font-italic coolColor ">
         Coming soon...
-      </div>
+      </div> -->
 
       <div class="py-4" />
 
-      <h1 class="hockeytapeHeader text-h3 custom-font makeSmaller">
+      <h1
+        class="hockeytapeHeader custom-fontHeader makeSmaller colorLightOrange"
+      >
         HOCKEYTAPE
       </h1>
       <!-- secret comment to test deploy script -->
@@ -42,17 +40,28 @@
       <v-row class="d-flex align-center justify-center extraRoomBottom">
         <v-col cols="auto">
           <!-- <p class="text-body-2 font-weight-light mb-n1 font-italic prettyColor">Heavy dream bass for the bees and the trees...</p> -->
-          <p
-            class="text-body-2 font-weight-light mb-n1 font-italic prettyColor"
+          <!-- <p
+            class="hockeytapeHeader customFont5 warpText"
           >
             Don't you know about Hockeytape?
+          </p> -->
+
+          <p class="hockeytapeHeader customFont5 warpText">
+            <span>D</span><span>o</span><span>n</span><span>'</span
+            ><span>t</span> <span> </span><span>y</span><span>o</span
+            ><span>u</span> <span> </span><span>k</span><span>n</span
+            ><span>o</span><span>w</span> <span> </span><span>a</span
+            ><span>b</span><span>o</span><span>u</span><span>t</span>
+            <span> </span> <span>H</span><span>o</span><span>c</span
+            ><span>k</span><span>e</span><span>y</span><span>t</span
+            ><span>a</span><span>p</span><span>e</span><span>?</span>
           </p>
         </v-col>
       </v-row>
 
       <v-row class="d-flex align-center justify-center">
         <v-col class="soundCloudPlayer">
-          <iframe
+          <!-- <iframe
             class="soundCloudFrame"
             width="90%"
             height="150"
@@ -60,6 +69,24 @@
             frameborder="no"
             allow="autoplay"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1807306176&color=%2319070f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe> -->
+          <!-- <iframe
+            class="max-width"
+            width="75%"
+            height="auto"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1979556068%3Fsecret_token%3Ds-H9QGtRDEKc8&color=%2319070f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe> -->
+          <iframe
+            class="max-width"
+            width="75%"
+            height="auto"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2152353423%3Fsecret_token%3Ds-vVAmD2KXV0k&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
           ></iframe>
         </v-col>
       </v-row>
@@ -121,7 +148,6 @@
 import AnimatedHeader from "../components/AnimatedHeader.vue";
 import { onMounted, ref } from "vue";
 
-
 const getImageHeight = () => {
   return window.innerWidth > 900 ? 450 : 300;
 };
@@ -130,18 +156,56 @@ const showBack = ref(true);
 
 const showArt2 = ref(false);
 
-
-
 onMounted(() => {
   // Delay showing art2.png by 5 seconds
   setTimeout(() => {
     showArt2.value = true;
-  }, 10000); // 5000ms = 5 seconds
+  }, 8000); // 5000ms = 5 seconds
 });
 </script>
 
 <style scoped>
 @import "../fonts/custom-font.css";
+
+.custom-font {
+  font-family: "CustomFont", sans-serif;
+  font-size: 1.2em;
+}
+
+.customFont2 {
+  font-family: "CustomFont2", sans-serif;
+  font-size: 1.8em;
+}
+
+.customFont3 {
+  font-family: "CustomFont3", sans-serif;
+  font-size: 1.8em;
+}
+
+.customFont4 {
+  font-family: "CustomFont4", sans-serif;
+  font-size: 1.8em;
+}
+
+.customFont5 {
+  font-family: "CustomFont5", sans-serif;
+  font-size: 1.8em;
+}
+
+.customFont5header {
+  font-family: "CustomFont5", sans-serif;
+  font-size: 0.2em;
+}
+
+.custom-fontHeader {
+  font-family: "CustomFont", sans-serif;
+  font-size: 3em;
+}
+
+.custom-fontHeader2 {
+  font-family: "CustomFont6", sans-serif;
+  font-size: 3em;
+}
 
 /* REMOVE BELOW IF YOU DON"T WANT BG TO COVER WHOLE SCREEN */
 .v-container {
@@ -182,10 +246,11 @@ onMounted(() => {
 }
 
 .custom-font {
-  letter-spacing: 0.1em !important;
   font-family: "CustomFont" !important;
+}
 
-  /* Add other styling as needed */
+.custom-font2 {
+  font-family: "CustomFont2" !important;
 }
 
 .buttonWrapperVertical {
@@ -194,7 +259,7 @@ onMounted(() => {
 }
 
 .app-container {
-  background-image: url("@/assets/treeBackground.png");
+  background-image: url("@/assets/treeBackground8.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -211,8 +276,8 @@ onMounted(() => {
 
 .fade {
   opacity: 0;
-  animation: fadeIn 7s forwards;
-  animation-delay: 5s;
+  animation: fadeIn 6s forwards;
+  animation-delay: 4s;
 }
 
 @keyframes fadeIn {
@@ -226,7 +291,7 @@ onMounted(() => {
 
 .coolColor {
   /* color: #77fef6; */
-  color: #77fef6;
+  color: #fec477;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 2.7);
 }
 
@@ -279,9 +344,6 @@ onMounted(() => {
   color: #44a03f; /* Slightly different shade when clicked */
 }
 
-.hockeytapeHeader {
-}
-
 @media screen and (max-width: 600px) {
   .makeSmaller {
     font-size: 2em !important; /* Adjust the font size for small screens */
@@ -332,17 +394,79 @@ onMounted(() => {
 }
 
 .hockeytapeHeader {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 2.7);
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 1.7);
   /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 5s ease; /* Adjust the duration to make it slower */
+  transition: opacity 3s ease; /* Adjust the duration to make it slower */
 }
 
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
+
+.max-width {
+  max-width: 800px;
+}
+
+.bigger {
+  font-size: 1.5em;
+}
+
+.colorLightOrange {
+  color: #ffefe2;
+}
+
+.warpText span {
+  display: inline-block;
+  animation: waveBump 5s ease-in-out infinite;
+}
+
+.warpText span:nth-child(odd) {
+  animation-delay: 0s;
+}
+
+.warpText span:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+@keyframes waveBump {
+  0%   { transform: translateY(0) scaleY(1); }
+  12.5% { transform: translateY(-1.5px) scaleY(1.01); }
+  25%  { transform: translateY(-3px) scaleY(1.02); }
+  37.5% { transform: translateY(-1.5px) scaleY(1.01); }
+  50%  { transform: translateY(0) scaleY(1); }
+  62.5% { transform: translateY(1.5px) scaleY(0.99); }
+  75%  { transform: translateY(3px) scaleY(0.98); }
+  87.5% { transform: translateY(1.5px) scaleY(0.99); }
+  100% { transform: translateY(0) scaleY(1); }
+}
+
+
+.warpText {
+  display: inline-block;
+  animation: warpLiquid 40s ease-in-out infinite; /* slower, smooth movement */
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes warpLiquid {
+  0%   { transform: translateY(0); }
+  10%  { transform: translateY(-0.3px); }
+  20%  { transform: translateY(0.3px); }
+  30%  { transform: translateY(-0.2px); }
+  40%  { transform: translateY(0.2px); }
+  50%  { transform: translateY(-0.3px); }
+  60%  { transform: translateY(0.3px); }
+  70%  { transform: translateY(-0.2px); }
+  80%  { transform: translateY(0.2px); }
+  90%  { transform: translateY(-0.3px); }
+  100% { transform: translateY(0); }
+}
+
+
+
 </style>

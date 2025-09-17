@@ -11,7 +11,7 @@
           :max-height="getImageHeight()"
           src="@/assets/newLogoGreyLarge2.png"
         />
-                <p>&copy; 2025 HOCKEYTAPE. All rights reserved. Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
+                <p>&copy; 2026 HOCKEYTAPE. All rights reserved. Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
                 
         </div>
         <!-- <div class="flexRow">

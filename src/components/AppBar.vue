@@ -1,12 +1,12 @@
 <template>
   <v-app-bar class="fadeIn appBar" flat color="transparent">
     <v-app-bar-title class="custom-font">
-      <div class="wrapper">
-        <v-img
+      <div class="wrapper color">
+        <!-- <v-img
           class="smallImage"
           :max-height="getImageHeight()"
           src="@/assets/logoWatermark192A37.png"
-        />
+        /> -->
         HKTP
       </div>
     </v-app-bar-title>
@@ -26,13 +26,17 @@ const getImageHeight = () => {
   letter-spacing: 0.1em;
 }
 
+.color {
+  color: #ffefe2; 
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
   gap: 0.5em;
-  color: #192A37;
+  /* color: #192A37; */
 }
 
 .fadeIn {

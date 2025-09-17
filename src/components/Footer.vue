@@ -3,13 +3,13 @@
       <!-- Your page content goes here -->
   
       <!-- Footer -->
-      <v-footer class="footer textGrey gap zindex fadeIn" color="#020201" flat>
+      <v-footer class="footer textGrey2 gap zindex fadeIn" color="#020201" flat>
         <div class="flexRow2 ">
             <!-- <p class="custom-font">HT</p> -->
             <v-img
           class="smallImage"
           :max-height="getImageHeight()"
-          src="@/assets/newLogoGreyLarge.png"
+          src="@/assets/newLogoGreyLarge2.png"
         />
                 <p>&copy; 2025 HOCKEYTAPE. All rights reserved. Unauthorized use or duplication of any content without expressed and written permission is strictly prohibited.</p>
                 
@@ -20,7 +20,7 @@
      
         </div> -->
 
-        <div class="tinyIcons zindex">
+        <div class="tinyIcons zindex textGrey2">
     
 
           <v-btn
@@ -246,8 +246,13 @@
 
 
 
-  .textGrey {
+  /* .textGrey {
     color: grey !important;
+    font-size: 0.8em;
+  } */
+
+  .textGrey2 {
+    color: #ffefe2 !important;
     font-size: 0.8em;
   }
 

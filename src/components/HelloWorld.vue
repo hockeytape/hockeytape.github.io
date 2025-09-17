@@ -47,15 +47,18 @@
           </p> -->
 
           <p class="hockeytapeHeader customFont5 warpText">
-            <span>D</span><span>o</span><span>n</span><span>'</span
-            ><span>t</span> <span> </span><span>y</span><span>o</span
-            ><span>u</span> <span> </span><span>k</span><span>n</span
-            ><span>o</span><span>w</span> <span> </span><span>a</span
-            ><span>b</span><span>o</span><span>u</span><span>t</span>
-            <span> </span> <span>H</span><span>o</span><span>c</span
-            ><span>k</span><span>e</span><span>y</span><span>t</span
-            ><span>a</span><span>p</span><span>e</span><span>?</span>
-          </p>
+  <span>D</span><span>o</span><span>n</span><span>'</span><span>t</span> <span> </span>
+  <span>y</span><span>o</span><span>u</span> <span> </span>
+  <span>k</span><span>n</span><span>o</span><span>w</span> <span> </span>
+  <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+  <span class="wrapSecondWord">
+    <span> </span>
+    <span>H</span><span>o</span><span>c</span><span>k</span><span>e</span><span>y</span>
+    <span>t</span><span>a</span><span>p</span><span>e</span><span>?</span>
+  </span>
+</p>
+
+
         </v-col>
       </v-row>
 
@@ -465,6 +468,16 @@ onMounted(() => {
   80%  { transform: translateY(0.2px); }
   90%  { transform: translateY(-0.3px); }
   100% { transform: translateY(0); }
+}
+
+.wrapSecondWord {
+  display: inline; /* default on desktop */
+}
+
+@media screen and (max-width: 600px) {
+  .wrapSecondWord {
+    display: block; /* forces it onto next line on mobile */
+  }
 }
 
 

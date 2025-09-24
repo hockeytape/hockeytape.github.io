@@ -50,7 +50,7 @@
   <span>D</span><span>o</span><span>n</span><span>'</span><span>t</span> <span> </span>
   <span>y</span><span>o</span><span>u</span> <span> </span>
   <span>k</span><span>n</span><span>o</span><span>w</span> <span> </span>
-  <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+  <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span> <span> </span>
   <span class="wrapSecondWord">
     <span> </span>
     <span>H</span><span>o</span><span>c</span><span>k</span><span>e</span><span>y</span>
@@ -152,7 +152,7 @@ import AnimatedHeader from "../components/AnimatedHeader.vue";
 import { onMounted, ref } from "vue";
 
 const getImageHeight = () => {
-  return window.innerWidth > 900 ? 450 : 300;
+  return window.innerWidth > 900 ? 250 : 300;
 };
 
 const showBack = ref(true);
@@ -262,7 +262,7 @@ onMounted(() => {
 }
 
 .app-container {
-  background-image: url("@/assets/treeBackground8.png");
+  background-image: url("@/assets/treeBackground.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;

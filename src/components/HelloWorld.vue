@@ -399,6 +399,8 @@ onMounted(() => {
 .hockeytapeHeader {
 display: inline-block; /* Important so filter applies just to the text box */
   filter: drop-shadow(1px 2px 5px rgba(49, 49, 49, 0.9));
+   padding-right: 0.3em;
+    padding-left: 0.3em;
   /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
 }
 

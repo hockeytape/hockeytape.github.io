@@ -397,7 +397,7 @@ onMounted(() => {
 }
 
 .hockeytapeHeader {
-  text-shadow: 2px 4px 10px rgba(0, 0, 0, 1.7);
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.9);
   /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
 }
 
